@@ -23,7 +23,7 @@
         <spring.cloud.version>Greenwich.SR2</spring.cloud.version>
         <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
 
-        <mvn-deploy-host>https://maven.landray.com.cn</mvn-deploy-host>
+        <mvn-deploy-host>https://maven.mpaas.com.cn</mvn-deploy-host>
         <deploy.version>-SNAPSHOT</deploy.version>
         <lombok.version>1.18.8</lombok.version>
 
@@ -50,40 +50,8 @@
         <coobird.thumbnailator.version>0.4.8</coobird.thumbnailator.version>
         <spring.boot.admin.version>2.1.6</spring.boot.admin.version>
 
-
         <mpaas.version>1.0.1</mpaas.version>
 
-        <druid.version>1.1.10</druid.version>
-        <arangodb.version>4.2.2</arangodb.version>
-        <emoji.java.version>5.0.0</emoji.java.version>
-        <jtds.version>1.3.1</jtds.version>
-        <jedis.version>2.9.0</jedis.version>
-        <jasypt.version>2.1.0</jasypt.version>
-        <commons.lang.version>2.6</commons.lang.version>
-        <commons.pool2.version>2.4.3</commons.pool2.version>
-        <poi-ooxml.version>3.17</poi-ooxml.version>
-        <json-lib.version>2.4</json-lib.version>
-        <log4j-over-slf4j.version>1.7.25</log4j-over-slf4j.version>
-        <org.slf4j.version>1.7.25</org.slf4j.version>
-        <logback.version>1.1.11</logback.version>
-        <commons-logging.version>1.2</commons-logging.version>
-        <netty.version>RELEASE</netty.version>
-        <httpasyncclient.version>4.1.4</httpasyncclient.version>
-
-        <nlp-lang.version>1.7.7</nlp-lang.version>
-        <ansj_seg.version>5.1.6</ansj_seg.version>
-        <elasticsearch.version>0.19.8.1</elasticsearch.version>
-        <elasticsearch.query.version>1.0</elasticsearch.query.version>
-        <elasticsearch.simdoc.version>1.0</elasticsearch.simdoc.version>
-        <elasticsearch.word-manage.version>1.0</elasticsearch.word-manage.version>
-        <elasticsearch.synonymy-manage.version>1.0</elasticsearch.synonymy-manage.version>
-        <elasticsearch.custom-update.version>1.0</elasticsearch.custom-update.version>
-        <lucene.lucene-core.version>3.6.0</lucene.lucene-core.version>
-        <jsoup.version>1.6.3</jsoup.version>
-        <pinyin4j.version>2.5.0</pinyin4j.version>
-        <cxf-spring-boot-starter-jaxws.version>3.3.2</cxf-spring-boot-starter-jaxws.version>
-
-        <swagger-annotations.version>1.5.20</swagger-annotations.version>
     </properties>
 
     <dependencyManagement>
@@ -110,7 +78,6 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
-
             <!--logstash对接引入-->
             <dependency>
                 <groupId>net.logstash.logback</groupId>
@@ -159,7 +126,6 @@
                 <artifactId>commons-exec</artifactId>
                 <version>${commons.exec.version}</version>
             </dependency>
-
             <!--数据库-->
             <dependency>
                 <groupId>com.h2database</groupId>
@@ -229,209 +195,6 @@
                 <artifactId>spring-boot-admin-starter-server</artifactId>
                 <version>${spring.boot.admin.version}</version>
             </dependency>
-
-            <!--架构包-->
-            <dependency>
-                <groupId>com.landray</groupId>
-                <artifactId>common-api</artifactId>
-                <version>${mpaas.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray</groupId>
-                <artifactId>common-base</artifactId>
-                <version>${mpaas.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray</groupId>
-                <artifactId>common-core</artifactId>
-                <version>${mpaas.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray</groupId>
-                <artifactId>framework-discovery-api</artifactId>
-                <version>${mpaas.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray</groupId>
-                <artifactId>framework-discovery-client</artifactId>
-                <version>${mpaas.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray</groupId>
-                <artifactId>framework-discovery-core</artifactId>
-                <version>${mpaas.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray</groupId>
-                <artifactId>framework-plugin-api</artifactId>
-                <version>${mpaas.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray</groupId>
-                <artifactId>framework-plugin-client</artifactId>
-                <version>${mpaas.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray</groupId>
-                <artifactId>framework-plugin-core</artifactId>
-                <version>${mpaas.version}${deploy.version}</version>
-            </dependency>
-
-            <!--持久化-->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
-                <version>${druid.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>redis.clients</groupId>
-                <artifactId>jedis</artifactId>
-                <version>${jedis.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>net.sourceforge.jtds</groupId>
-                <artifactId>jtds</artifactId>
-                <version>${jtds.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.arangodb</groupId>
-                <artifactId>arangodb-java-driver</artifactId>
-                <version>${arangodb.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.vdurmont</groupId>
-                <artifactId>emoji-java</artifactId>
-                <version>${emoji.java.version}</version>
-            </dependency>
-            <!--工具包-->
-            <dependency>
-                <groupId>commons-lang</groupId>
-                <artifactId>commons-lang</artifactId>
-                <version>${commons.lang.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-pool2</artifactId>
-                <version>${commons.pool2.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.poi</groupId>
-                <artifactId>poi-ooxml</artifactId>
-                <version>${poi-ooxml.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>net.sf.json-lib</groupId>
-                <artifactId>json-lib</artifactId>
-                <version>${json-lib.version}</version>
-                <classifier>jdk15</classifier>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>commons-lang</artifactId>
-                        <groupId>commons-lang</groupId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>log4j-over-slf4j</artifactId>
-                <version>${log4j-over-slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>${org.slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-core</artifactId>
-                <version>${logback.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-classic</artifactId>
-                <version>${logback.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-logging</groupId>
-                <artifactId>commons-logging</artifactId>
-                <version>${commons-logging.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-all</artifactId>
-                <version>${netty.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpasyncclient</artifactId>
-                <version>${httpasyncclient.version}</version>
-            </dependency>
-
-            <!-- 分词 -->
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>nlp-lang</artifactId>
-                <version>${nlp-lang.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>ansj_seg</artifactId>
-                <version>${ansj_seg.version}</version>
-            </dependency>
-
-            <!--搜索服务依赖-->
-            <dependency>
-                <groupId>org.elasticsearch</groupId>
-                <artifactId>elasticsearch</artifactId>
-                <version>${elasticsearch.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.elasticsearch</groupId>
-                <artifactId>query</artifactId>
-                <version>${elasticsearch.query.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.elasticsearch</groupId>
-                <artifactId>simdoc</artifactId>
-                <version>${elasticsearch.simdoc.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.elasticsearch</groupId>
-                <artifactId>word-manage</artifactId>
-                <version>${elasticsearch.word-manage.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.elasticsearch</groupId>
-                <artifactId>synonymy-manage</artifactId>
-                <version>${elasticsearch.synonymy-manage.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.elasticsearch</groupId>
-                <artifactId>custom-update</artifactId>
-                <version>${elasticsearch.custom-update.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.lucene</groupId>
-                <artifactId>lucene-core</artifactId>
-                <version>${lucene.lucene-core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jsoup</groupId>
-                <artifactId>jsoup</artifactId>
-                <version>${jsoup.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>ruiyun</groupId>
-                <artifactId>pinyin4j</artifactId>
-                <version>${pinyin4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.cxf</groupId>
-                <artifactId>cxf-spring-boot-starter-jaxws</artifactId>
-                <version>${cxf-spring-boot-starter-jaxws.version}</version>
-            </dependency>
-
             <!--框架依赖-->
             <dependency>
                 <groupId>com.github.ulisesbocchio</groupId>
@@ -443,8 +206,6 @@
                 <artifactId>jasypt-spring-boot</artifactId>
                 <version>${jasypt.version}</version>
             </dependency>
-
-
             <!--spring框架包-->
             <dependency>
                 <groupId>io.swagger</groupId>
@@ -452,582 +213,55 @@
                 <version>${swagger-annotations.version}</version>
             </dependency>
 
-            <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-web</artifactId>-->
-            <!--<version>${spring-boot-starter-web.version}</version>-->
-            <!--</dependency>-->
-
-
-            <!--api包-->
+            <!--架构包-->
             <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-api-callcontext</artifactId>
-                <version>${labc.api.callcontext.version}${deploy.version}</version>
+                <groupId>com.mpaas</groupId>
+                <artifactId>common-api</artifactId>
+                <version>${mpaas.version}${deploy.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-api-ekp-org</artifactId>
-                <version>${labc.api.ekp.org.version}${deploy.version}</version>
+                <groupId>com.mpaas</groupId>
+                <artifactId>common-base</artifactId>
+                <version>${mpaas.version}${deploy.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-api-spel</artifactId>
-                <version>${labc.api.spel.version}${deploy.version}</version>
-            </dependency>
-
-
-            <!--业务包-->
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-funlib-core</artifactId>
-                <version>${labc.biz.funlib.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-funlib-api</artifactId>
-                <version>${labc.biz.funlib.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-funlib-client</artifactId>
-                <version>${labc.biz.funlib.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-application-api</artifactId>
-                <version>${labc.biz.application.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-application-client</artifactId>
-                <version>${labc.biz.application.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-application-core</artifactId>
-                <version>${labc.biz.application.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-application-rest</artifactId>
-                <version>${labc.biz.application.version}${deploy.version}</version>
+                <groupId>com.mpaas</groupId>
+                <artifactId>common-core</artifactId>
+                <version>${mpaas.version}${deploy.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-portal-api</artifactId>
-                <version>${labc.biz.portal.version}${deploy.version}</version>
+                <groupId>com.mpaas</groupId>
+                <artifactId>framework-discovery-api</artifactId>
+                <version>${mpaas.version}${deploy.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-portal-core</artifactId>
-                <version>${labc.biz.portal.version}${deploy.version}</version>
+                <groupId>com.mpaas</groupId>
+                <artifactId>framework-discovery-client</artifactId>
+                <version>${mpaas.version}${deploy.version}</version>
             </dependency>
-
             <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-console-api</artifactId>
-                <version>${labc.biz.console.version}${deploy.version}</version>
+                <groupId>com.mpaas</groupId>
+                <artifactId>framework-discovery-core</artifactId>
+                <version>${mpaas.version}${deploy.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-console-core</artifactId>
-                <version>${labc.biz.console.version}${deploy.version}</version>
+                <groupId>com.mpaas</groupId>
+                <artifactId>framework-plugin-api</artifactId>
+                <version>${mpaas.version}</version>
             </dependency>
-
             <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-kgsearch-api</artifactId>
-                <version>${labc.biz.kgsearch.version}${deploy.version}</version>
+                <groupId>com.mpaas</groupId>
+                <artifactId>framework-plugin-client</artifactId>
+                <version>${mpaas.version}${deploy.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-kgsearch-client</artifactId>
-                <version>${labc.biz.kgsearch.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-kgsearch-core</artifactId>
-                <version>${labc.biz.kgsearch.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-kgsearch-rest</artifactId>
-                <version>${labc.biz.kgsearch.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-ftsearch-api</artifactId>
-                <version>${labc.biz.ftsearch.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-ftsearch-client</artifactId>
-                <version>${labc.biz.ftsearch.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-ftsearch-core</artifactId>
-                <version>${labc.biz.ftsearch.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-ftsearch-rest</artifactId>
-                <version>${labc.biz.ftsearch.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-nlp-api</artifactId>
-                <version>${labc.biz.nlp.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-nlp-client</artifactId>
-                <version>${labc.biz.nlp.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-nlp-core</artifactId>
-                <version>${labc.biz.nlp.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-nlp-rest</artifactId>
-                <version>${labc.biz.nlp.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-recommend-api</artifactId>
-                <version>${labc.biz.recommend.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-recommend-core</artifactId>
-                <version>${labc.biz.recommend.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-recommend-client</artifactId>
-                <version>${labc.biz.recommend.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-yunwen-api</artifactId>
-                <version>${labc.biz.yunwen.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-yunwen-client</artifactId>
-                <version>${labc.biz.yunwen.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-yunwen-core</artifactId>
-                <version>${labc.biz.yunwen.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-yunwen-rest</artifactId>
-                <version>${labc.biz.yunwen.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-scene-api</artifactId>
-                <version>${labc.biz.scene.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-scene-client</artifactId>
-                <version>${labc.biz.scene.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-scene-core</artifactId>
-                <version>${labc.biz.scene.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-scene-rest</artifactId>
-                <version>${labc.biz.scene.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-qa-api</artifactId>
-                <version>${labc.biz.qa.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-qa-client</artifactId>
-                <version>${labc.biz.qa.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-qa-core</artifactId>
-                <version>${labc.biz.qa.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-qa-rest</artifactId>
-                <version>${labc.biz.qa.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-ekp-api</artifactId>
-                <version>${labc.biz.ekp.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-ekp-client</artifactId>
-                <version>${labc.biz.ekp.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-ekp-core</artifactId>
-                <version>${labc.biz.ekp.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-ekp-rest</artifactId>
-                <version>${labc.biz.ekp.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-initialize-api</artifactId>
-                <version>${labc.biz.initialize.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-initialize-client</artifactId>
-                <version>${labc.biz.initialize.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-initialize-core</artifactId>
-                <version>${labc.biz.initialize.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-initialize-rest</artifactId>
-                <version>${labc.biz.initialize.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-logging-api</artifactId>
-                <version>${labc.biz.logging.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-logging-client</artifactId>
-                <version>${labc.biz.logging.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-logging-core</artifactId>
-                <version>${labc.biz.logging.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-logging-rest</artifactId>
-                <version>${labc.biz.logging.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-system-api</artifactId>
-                <version>${labc.biz.system.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-system-client</artifactId>
-                <version>${labc.biz.system.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-system-core</artifactId>
-                <version>${labc.biz.system.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-system-rest</artifactId>
-                <version>${labc.biz.system.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-label-api</artifactId>
-                <version>${labc.biz.label.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-label-client</artifactId>
-                <version>${labc.biz.label.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-label-core</artifactId>
-                <version>${labc.biz.label.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-label-rest</artifactId>
-                <version>${labc.biz.label.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-resource-api</artifactId>
-                <version>${labc.biz.resource.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-resource-client</artifactId>
-                <version>${labc.biz.resource.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-resource-core</artifactId>
-                <version>${labc.biz.resource.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-resource-rest</artifactId>
-                <version>${labc.biz.resource.version}${deploy.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-sysmodelconfig-api</artifactId>
-                <version>${labc.biz.sysmodelconfig.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-sysmodelconfig-core</artifactId>
-                <version>${labc.biz.sysmodelconfig.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-sysmodelconfig-client</artifactId>
-                <version>${labc.biz.sysmodelconfig.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-behaviorextraction-api</artifactId>
-                <version>${labc.biz.behaviorextraction.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-behaviorextraction-core</artifactId>
-                <version>${labc.biz.behaviorextraction.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-behaviorextraction-client</artifactId>
-                <version>${labc.biz.behaviorextraction.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-work-api</artifactId>
-                <version>${labc.biz.work.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-work-core</artifactId>
-                <version>${labc.biz.work.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-work-client</artifactId>
-                <version>${labc.biz.work.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-onesearch-client</artifactId>
-                <version>${labc.onesearch.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-docrecommend-api</artifactId>
-                <version>${labc.biz.docrecommend.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-docrecommend-core</artifactId>
-                <version>${labc.biz.docrecommend.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-docrecommend-client</artifactId>
-                <version>${labc.biz.docrecommend.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-ft-permission-api</artifactId>
-                <version>${labc.biz.ft.permission.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-ft-permission-client</artifactId>
-                <version>${labc.biz.ft.permission.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-ft-permission-core</artifactId>
-                <version>${labc.biz.ft.permission.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-dingding-api</artifactId>
-                <version>${labc.biz.dingding.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-dingding-core</artifactId>
-                <version>${labc.biz.dingding.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-smarttag-api</artifactId>
-                <version>${labc.biz.smarttag.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-smarttag-core</artifactId>
-                <version>${labc.biz.smarttag.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-smarttag-client</artifactId>
-                <version>${labc.biz.smarttag.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray</groupId>
-                <artifactId>portrait-aip-api</artifactId>
-                <version>${portrait-aip.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray</groupId>
-                <artifactId>portrait-aip-client</artifactId>
-                <version>${portrait-aip.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-dingding-client</artifactId>
-                <version>${labc.biz.dingding.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-dingding-rest</artifactId>
-                <version>${labc.biz.dingding.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-event-api</artifactId>
-                <version>${labc.biz.event.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-event-core</artifactId>
-                <version>${labc.biz.event.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-event-client</artifactId>
-                <version>${labc.biz.event.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-persona-api</artifactId>
-                <version>${labc.biz.persona.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-persona-core</artifactId>
-                <version>${labc.biz.persona.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-persona-client</artifactId>
-                <version>${labc.biz.persona.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-patch-api</artifactId>
-                <version>${labc.biz.patch.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-patch-core</artifactId>
-                <version>${labc.biz.patch.version}${deploy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.landray.labc</groupId>
-                <artifactId>labc-biz-patch-client</artifactId>
-                <version>${labc.biz.patch.version}${deploy.version}</version>
+                <groupId>com.mpaas</groupId>
+                <artifactId>framework-plugin-core</artifactId>
+                <version>${mpaas.version}${deploy.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <!--仓库设置-->
-    <repositories>
-        <!-- <repository>
-            <id>ali-maven</id>
-            <name>aliyun maven repository</name>
-            <url>https://maven.aliyun.com/repository/central/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository> -->
-        <repository>
-            <id>landray-nexus</id>
-            <name>Nexus Landray</name>
-            <url>${mvn-deploy-host}/repository/maven-public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-    <!--插件仓库设置-->
-    <pluginRepositories>
-        <pluginRepository>
-            <id>landray-nexus</id>
-            <name>Nexus Landray</name>
-            <url>${mvn-deploy-host}/repository/maven-public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
-    <!--发布库设置-->
-    <distributionManagement>
-        <repository>
-            <id>landray-release</id>
-            <url>${mvn-deploy-host}/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>landray-snapshot</id>
-            <url>${mvn-deploy-host}/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
     <!--构建配置-->
     <build>
         <pluginManagement>
@@ -1036,7 +270,7 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <configuration>
-                        <mainClass>com.landray.starter.Application</mainClass>
+                        <mainClass>com.ibyte.starter.Application</mainClass>
                     </configuration>
                     <extensions>true</extensions>
                     <executions>
