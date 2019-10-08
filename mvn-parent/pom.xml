@@ -213,7 +213,7 @@
                 <version>${swagger-annotations.version}</version>
             </dependency>
 
-            <!--架构包-->
+            <!--基础架构包-->
             <dependency>
                 <groupId>com.mpaas</groupId>
                 <artifactId>common-api</artifactId>
