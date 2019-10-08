@@ -3,9 +3,9 @@
 ______  ___     ________                      
 ___   |/  /     ___  __ \_____ _______________
 __  /|_/ /________  /_/ /  __ `/_  ___/_  ___/
-_  /  / /_/_____/  ____// /_/ /_(__  )_(__  ) 
+_  /  / /_/_____/  ____// /_/ /_(__  )_(__  )
 /_/  /_/        /_/     \__,_/ /____/ /____/  
 
 欢迎使用M-Pass系统, 当前应用服务名：${spring.application.name}:${server.port}
-Based On Springboot${spring-boot.formatted-version} By Code Farmer Org.
+Based On Springboot${spring-boot.formatted-version} By Code Farmer Framework(iByte) Org.
 ***************************************************************
