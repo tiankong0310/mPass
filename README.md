@@ -1,5 +1,5 @@
 # M-Pass
-[中文说明](https://gitee.com/ibyte/M-Pass/blob/master/README.md)
+[中文说明](https://gitee.com/ibyte/M-Pass/blob/master/README.md)  | 
 [英文说明](https://gitee.com/ibyte/M-Pass/blob/master/README.en.md)
 
 #### 介绍
