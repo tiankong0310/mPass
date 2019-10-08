@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="true" scanPeriod="60000">
+    <!--
+        从配置文件中设置变量：<property resource="bootstrap.properties" />
+        从spring配置中获取变量:<springProperty scope="context" name="appName" source="spring.application.name"/>
+    -->
+    <property name="ENCODER" value="UTF-8" />
+    <springProperty scope="context" name="logPath" source="logging.path" defaultValue="logs"/>
+    <springProperty scope="context" name="defaultLevel" source="logging.level.default" defaultValue="info"/>
+    <springProperty scope="context" name="consoleLevel" source="logging.level.console_out"
+                    defaultValue="${defaultLevel}"/>
+    <springProperty scope="context" name="ibyteLevel" source="logging.level.ibyte_log"
+                    defaultValue="${defaultLevel}"/>
+    <springProperty scope="context" name="stashLevel" source="logging.level.stash_log" defaultValue="${defaultLevel}"/>
+    <springProperty scope="context" name="appName" source="spring.application.name"/>
+    <springProperty scope="context" name="serverPort" source="server.port"  defaultValue="8080" />
+    <!--<contextName>${appName}</contextName>-->
+    <!--
+        日志级别排序为： TRACE < DEBUG < INFO < WARN < ERROR。
+        %d：表示日期，
+        %n：换行
+        %thread：表示线程名
+        %level：日志级别
+        %msg：日志消息
+        %file：表示文件名
+        %class： 表示文件名
+        %logger：Java类名（含包名，这里设定了36位，若超过36位，包名会精简为类似a.b.c.JavaBean)
+        %line：Java类的行号
+        更多日志格式说明详见：https://logback.qos.ch/manual/layouts.html#ClassicPatternLayout
+    -->
+
+    <!-- 控制台策略 -->
+    <appender name="console_out" class="ch.qos.logback.core.ConsoleAppender">
+        <!--<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>${consoleLevel}</level>
+        </filter>-->
+        <encoder>
+            <pattern>%-4relative %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{100}.%M\(%line\) - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- 日志策略 -->
+    <appender name="ibyte_log" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>${ibyteLevel}</level>
+        </filter>-->
+        <file>${logPath}/ibyte.log</file>
+        <!-- 设置滚动策略 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${logPath}/ibyte.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <!-- 单文件不超过100mb，保存180天历史日志, 且大小不超过100GB -->
+            <maxFileSize>100MB</maxFileSize>
+            <maxHistory>180</maxHistory>
+            <totalSizeCap>100GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%-4relative %property{appName} %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+                %logger{100}.%M\(%line\) - %msg%n
+            </pattern>
+            <charset>${ENCODER}</charset>
+        </encoder>
+    </appender>
+
+    <!--logstash日志-->
+    <appender name="stash_log" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>${stashLevel}</level>
+        </filter>-->
+        <file>${logPath}/logback.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logPath}/logback.bk.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder"/>
+    </appender>
+
+    <!--日志：操作日志-->
+    <include resource="logback-oper.xml" optional="true"/>
+    <!--日志：前端日志-->
+    <include resource="logback-front.xml" optional="true"/>
+    <!--智能平台日志处理-->
+    <include resource="logback-aip.xml" optional="true"/>
+
+    <root>
+        <appender-ref ref="console_out"/>
+        <appender-ref ref="ibyte_log"/>
+        <appender-ref ref="stash_log"/>
+    </root>
+</configuration>

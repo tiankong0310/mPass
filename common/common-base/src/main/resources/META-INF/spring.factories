@@ -1,0 +1,6 @@
+org.springframework.boot.SpringApplicationRunListener=\
+  com.ibyte.component.config.DefaultConfigListener,com.ibyte.component.logback.LogbackListener,com.ibyte.component.banner.BannerListener
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.ibyte.component.spring.PackageScanAutoConfig,com.ibyte.component.redis.RedissonAutoConfiguration
+com.ibyte.component.config.DefaultConfigFactory=\
+  com.ibyte.component.config.InitPropConfigFactory
