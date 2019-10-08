@@ -3,29 +3,7 @@
 [英文说明](https://gitee.com/ibyte/M-Pass/blob/master/README.en.md)
 
 ### JAR依赖视图
-```mermaid
-graph TD;
-	id1(framework-discovery-core)-->id4(framework-discovery-api)
-　　id3(common-test)-->id2(common-base)
-　　id4(framework-discovery-api)-->id2(common-base)
-　　id5(framework-plugin-api)-->id2(common-base)
-　　id6(framework-plugin-core)-->id5(framework-plugin-api)
-　　id7(framework-discovery-client)-->id4(framework-discovery-api)
-　　id8(framework-plugin-client)-->id5(framework-plugin-api)
-　　id8(framework-plugin-client)-->id7(framework-discovery-client)
-　　id9(mvn-min)-->id8(framework-plugin-client)
-　　id10(common-core)-->id11(common-api)
-　　id11(common-api)-->id9(mvn-min)
-　　id12(mvn-common-core)-->id10(common-core)
-　　id12(mvn-common-core)-->id13(mvn-common-api)
-　　id13(mvn-common-api)-->id11(common-api)
-　　id13(mvn-common-api)-->id16(sys-auth-api)
-　　id13(mvn-common-api)-->id17(sys-org-api)
-　　id14(sys-org-core)-->id12(mvn-common-core)
-　　id15(sys-auth-core)-->id12(mvn-common-core)
-　　id18(sys-auth-client)-->id16(sys-auth-api)
-　　id19(sys-org-client)-->id17(sys-org-api)
-```
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1009/000546_1c3ce012_1468963.png "JAR.png")
 
 #### 介绍
 开发平台 mPaaS（Microservice PaaS）为 租户级别 开发、测试、运营及运维提供云到端的一站式解决方案，能有效降低技术门槛、减少研发成本、提升开发效率，协助企业快速搭建稳定高质量的Pass平台应用
