@@ -10,14 +10,12 @@
     /_/  /_/        /_/     \__,_/ /____/ /____/  
 
 **作者**：iByte (码哥 or 李尚志)
+[中文说明](https://gitee.com/ibyte/M-Pass/blob/master/README.md)  |  [英文说明](https://gitee.com/ibyte/M-Pass/blob/master/README.en.md)
 
 开发平台 mPaaS（Microservice PaaS）为 租户级别 开发、测试、运营及运维提供云到端的一站式解决方案，能有效降低技术门槛、减少研发成本、提升开发效率，协助企业快速搭建稳定高质量的Pass平台应用
 
  :anger: :anger: :anger: 
 > 系统处于开发阶段, 预计**两个月**时间完成整体架构体系
-
-
-[中文说明](https://gitee.com/ibyte/M-Pass/blob/master/README.md)  |  [英文说明](https://gitee.com/ibyte/M-Pass/blob/master/README.en.md)
 
 **核心功能**：
 - **快速开发**：工程化的开发框架可以自动生成初始化代码，框架还提供模块化开发模式，适用于多人协作开发。
