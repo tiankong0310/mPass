@@ -1,6 +1,9 @@
 # mPaaS （Microservice PaaS）
 微服务租户级开发平台
 
+ :anger: :anger: :anger: 
+> 系统处于开发阶段, 预计**两个月**时间完成整体架构体系
+
 [TOC]
 
     ______  ___     ________                      
@@ -15,8 +18,7 @@
 
 开发平台 mPaaS（Microservice PaaS）为 租户级别 开发、测试、运营及运维提供云到端的一站式解决方案，能有效降低技术门槛、减少研发成本、提升开发效率，协助企业快速搭建稳定高质量的Pass平台应用
 
- :anger: :anger: :anger: 
-> 系统处于开发阶段, 预计**两个月**时间完成整体架构体系
+
 
 **核心功能**：
 - **快速开发**：工程化的开发框架可以自动生成初始化代码，框架还提供模块化开发模式，适用于多人协作开发。
@@ -44,7 +46,6 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.ibyte.component.config.DefaultConfigFactory=\
   com.ibyte.component.config.InitPropConfigFactory
 ```
-
 
 **TODO**：需要实现对扩展点IoC和AOP的支持，一个扩展点可以直接setter注入其它扩展点。
 
