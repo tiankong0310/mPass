@@ -1,5 +1,5 @@
 <p align="center">
-	<a href="https://gitee.com/ibyte/M-Pass"><img src="https://images.gitee.com/uploads/images/2019/1009/235538_73450b95_1468963.png" width="400"></a>
+	<a href="https://gitee.com/ibyte/M-Pass"><img src="https://images.gitee.com/uploads/images/2019/1009/235538_73450b95_1468963.png" width="500"></a>
 </p>
 <p align="center">
 	<a target="_blank" href="https://search.maven.org/search?q=M-PasS">
