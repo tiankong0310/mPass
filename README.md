@@ -1,4 +1,21 @@
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1009/235538_73450b95_1468963.png "mpass.png")
+<p align="center">
+	<a href="https://gitee.com/ibyte/M-Pass"><img src="https://images.gitee.com/uploads/images/2019/1009/235538_73450b95_1468963.png" width="400"></a>
+</p>
+<p align="center">
+	<a target="_blank" href="https://search.maven.org/search?q=M-PasS">
+		<img src="https://img.shields.io/badge/Maven Central-1.12.0-blue.svg" ></img>
+	</a>
+	<a target="_blank" href="https://gitee.com/ibyte/M-Pass/blob/master/LICENSE">
+		<img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" ></img>
+	</a>
+	<a target="_blank" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">
+		<img src="https://img.shields.io/badge/JDK-1.8+-green.svg" ></img>
+	</a>
+	<a target="_blank" href="https://gitee.com/ibyte/M-Pass" title="API文档">
+		<img src="https://img.shields.io/badge/Api Docs-1.12.0-orange.svg" ></img>
+	</a>
+</p>
+
 # mPaaS （Microservice PaaS）
 微服务租户级开发平台
 
