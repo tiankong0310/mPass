@@ -12,3 +12,7 @@ All components have experienced high concurrency, high traffic inspection, deep 
 Support operational activities to deliver one-stop full-process creation management, load intelligent delivery capabilities, and maximize operational efficiency and conversion results to help business growth.
 #### 4.Flexible use
 The framework and components are not strongly dependent, they are separable and flexible. Each component can provide powerful functions independently, and can also work together to optimize the user experience and play a greater role.
+
+### JAR Rely
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1009/000821_c4d97493_1468963.png "JAR.png")
+
