@@ -1,5 +1,5 @@
 # mPaaS （Microservice PaaS）
-
+微服务租户级开发平台
 [TOC]
 
     ______  ___     ________                      
@@ -29,13 +29,13 @@
 **交流群**
 <table border="0">
     <tr>
-        <td>QQ交流群：<font color="red">877056205</font> mPaaS（Microservice PaaS）</td>
+        <td>QQ交流群：<font color="red">877056205</font> mPaaS</td>
         <td>微信交流群：<font color="red">iByte_Li</font>(备注拉群要求)</td>
         <td>微信公众号：<font color="red">码农架构</font></td>
     </tr>
     <tr>&nbsp;</tr>
     <tr>
-        <td><img title="QQ交流群-877056205" src="package/docs/images/QQ群-877056205.png" height="250" width="200"/></td>
+        <td><img title="QQ交流群-877056205" src="package/docs/images/QQ群-877056205.png" height="250" width="220"/></td>
         <td><img title="微信交流群-iByte_Li" src="package/docs/images/个人微信-iByte_Li.png" height="250" width="250"/></td>
         <td><img title="微信公众号-微技术栈" src="package/docs/images/码农架构-公众号.jpg" height="220" width="250"/></td>
     </tr>
