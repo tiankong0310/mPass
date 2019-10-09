@@ -37,14 +37,15 @@
 - 支持实现redis拓展
 - 支持实现spring基础拓展
 
-``
+```java
 org.springframework.boot.SpringApplicationRunListener=\
   com.ibyte.component.config.DefaultConfigListener,com.ibyte.component.logback.LogbackListener,com.ibyte.component.banner.BannerListener
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.ibyte.component.spring.PackageScanAutoConfig,com.ibyte.component.redis.RedissonAutoConfiguration
 com.ibyte.component.config.DefaultConfigFactory=\
   com.ibyte.component.config.InitPropConfigFactory
-``
+```
+
 
 **TODO**：需要实现对扩展点IoC和AOP的支持，一个扩展点可以直接setter注入其它扩展点。
 
