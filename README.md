@@ -35,7 +35,7 @@
     </tr>
     <tr>&nbsp;</tr>
     <tr>
-        <td><img title="QQ交流群-877056205" src="package/docs/images/QQ群-877056205.png" height="250" width="220"/></td>
+        <td><img title="QQ交流群-877056205" src="package/docs/images/QQ群-877056205.png" height="250" width="250"/></td>
         <td><img title="微信交流群-iByte_Li" src="package/docs/images/个人微信-iByte_Li.png" height="250" width="250"/></td>
         <td><img title="微信公众号-微技术栈" src="package/docs/images/码农架构-公众号.jpg" height="220" width="250"/></td>
     </tr>
