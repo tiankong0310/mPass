@@ -1,5 +1,6 @@
 package com.ibyte.common.dto;
 
+import com.ibyte.common.i18n.ResourceUtil;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -64,8 +65,7 @@ public class Response<T> {
         super();
         this.success = success;
         this.code = code;
-        // TODO 多语言处理
-        this.msg = msg;;
+        this.msg = msg == null ? ResourceUtil.getString(code) : msg;
         this.data = data;
     }
 }
