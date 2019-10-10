@@ -69,6 +69,21 @@ com.ibyte.component.config.DefaultConfigFactory=\
 
 **TODO**：需要实现对扩展点IoC和AOP的支持，一个扩展点可以直接setter注入其它扩展点。
 
+**交流群**
+<table border="0">
+    <tr>
+        <td>QQ交流群：<font color="red">877056205</font> mPaaS</td>
+        <td>微信交流群：<font color="red">iByte_Li</font>(备注拉群要求)</td>
+        <td>微信公众号：<font color="red">码农架构</font></td>
+    </tr>
+    <tr>&nbsp;</tr>
+    <tr>
+        <td><img title="QQ交流群-877056205" src="package/docs/images/QQ群-877056205.png" height="200" width="200"/></td>
+        <td><img title="微信交流群-iByte_Li" src="package/docs/images/个人微信-iByte_Li.png" height="200" width="200"/></td>
+        <td><img title="微信公众号-微技术栈" src="package/docs/images/码农架构-公众号.jpg" height="200" width="200"/></td>
+    </tr>
+</table
+
 ** 核心JAR架构依赖视图 ** 
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/1009/000659_b0861629_1468963.png "JAR.png")
 
