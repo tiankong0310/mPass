@@ -3,7 +3,6 @@ package com.ibyte.common.config;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-
 /**
  * 多语言配置信息
  *
