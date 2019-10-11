@@ -12,5 +12,12 @@
 
     <artifactId>mvn-min</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.ibyte</groupId>
+            <artifactId>framework-plugin-client</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
