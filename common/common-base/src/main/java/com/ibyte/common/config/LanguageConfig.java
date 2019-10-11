@@ -7,7 +7,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * 多语言配置信息
  *
- * @author liheng
+ * @author li.Shangzhi
+ * @Date: 2019-10-11
  */
 @ConfigurationProperties("kmss.lang")
 public class LanguageConfig {

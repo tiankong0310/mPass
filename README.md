@@ -115,6 +115,27 @@ public KmssRuntimeException(String messageKey) {
 		this.code = messageKey;
 }
 ```
+### 1.3 系统内置配置
+**@EnableConfigurationProperties 与 @ConfigurationProperties 处理**
+```java
+@Configuration
+@EnableConfigurationProperties({SystemConfig.class, TenantConfig.class, LicenseConfig.class, LanguageConfig.class, CorsConfig.class})
+```
+```java
+// 多语言配置信息
+@ConfigurationProperties("kmss.lang")
+public class LanguageConfig {
+    //...
+}
+
+// 系统配置
+@ConfigurationProperties("kmss.system")
+public class SystemConfig {
+    //...
+}
+```
+
+
 
 
 **TODO**：需要实现对扩展点IoC和AOP的支持，一个扩展点可以直接setter注入其它扩展点。
