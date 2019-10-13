@@ -137,10 +137,8 @@ public class SystemConfig {
 }
 ```
 
-
-
-
-**TODO**：需要实现对扩展点IoC和AOP的支持，一个扩展点可以直接setter注入其它扩展点。
+** 核心JAR架构依赖视图 ** 
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1009/000659_b0861629_1468963.png "JAR.png")
 
 **交流群**
 <table border="0">
@@ -155,7 +153,4 @@ public class SystemConfig {
         <td><img title="微信交流群-iByte_Li" src="package/docs/images/个人微信-iByte_Li.png" height="200" width="200"/></td>
         <td><img title="微信公众号-微技术栈" src="package/docs/images/码农架构-公众号.jpg" height="200" width="200"/></td>
     </tr>
-</table
-
-** 核心JAR架构依赖视图 ** 
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1009/000659_b0861629_1468963.png "JAR.png")
+</table>
