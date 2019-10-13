@@ -36,7 +36,7 @@
 
 [中文说明](https://gitee.com/ibyte/M-Pass/blob/master/README.md)  |  [English](https://gitee.com/ibyte/M-Pass/blob/master/README.en.md)
 
-开发平台 mPaaS（Microservice PaaS）为 租户级别 开发、测试、运营及运维提供云到端的一站式解决方案，能有效降低技术门槛、减少研发成本、提升开发效率，协助企业快速搭建稳定高质量的Pass平台应用
+微服务开发平台 mPass（Microservice Pass）为 租户开发、测试、运营及运维提供云到端的一站式解决方案，能有效降低技术门槛、减少研发成本、提升开发效率，协助企业快速搭建稳定高质量的微服务应用
 
 
 
@@ -47,8 +47,9 @@
 - **使用方式灵活**：框架与组件并没有强依赖，可分可合，灵活机动。各组件可以独立的提供强大的功能，也可以互相配合优化使用体验，发挥更大的作用
 
 **查看更新记录请移步**
--  `common-base`  :heavy_check_mark: 
--  `common-api` [目前进度](https://gitee.com/ibyte/M-Pass/blob/master/UPDAT-RECORD.md)
+- [x] common
+    - [x] common-base
+    - [x] common-api [目前进度](https://gitee.com/ibyte/M-Pass/blob/master/UPDAT-RECORD.md)
 
 ## 1.1 开发细节
 ### 1.1 SPI拓展
