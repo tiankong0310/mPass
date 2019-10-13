@@ -159,11 +159,3 @@ public class SystemConfig {
 
 ** 核心JAR架构依赖视图 ** 
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/1009/000659_b0861629_1468963.png "JAR.png")
-
-## 应用场景设计
-- 一、App 性能提速
-![App 性能提速](https://images.gitee.com/uploads/images/2019/1008/192247_1c6d70a1_1468963.jpeg "App性能提升.jpg")
-- 二、研发效能提升
-![研发效能提升](https://images.gitee.com/uploads/images/2019/1008/192259_f2fefd0d_1468963.jpeg "研发效能提升.jpg")
-- 三、数字化运营
-![数字化运营](https://images.gitee.com/uploads/images/2019/1008/192445_511743b1_1468963.jpeg "数字化运营.jpg")
