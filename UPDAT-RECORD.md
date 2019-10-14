@@ -1,6 +1,6 @@
 #  更新记录
 ## common
-- common-base 模块
+## common-base 模块
 - 2019年10月8日  
     - ``基础模块划分整理common基础公共模块``
     - ``framework-discovery插件工厂模块、系统部署模块``
