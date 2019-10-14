@@ -1,5 +1,4 @@
 #  更新记录
-## common
 ## common-base 模块
 - 2019年10月8日  
     - ``基础模块划分整理common基础公共模块``
@@ -31,3 +30,4 @@
     - ``模块依赖包架构拆分framework-discovery-api,framework-plugin-client依赖更新``
     - ``采用HibernateValidato对DTO进行校验,基础数据对象完善，基础API字段处理接口完善``
     - ``添加IField字段接口，计划支持多种注解，字段处理器完善``
+> 本地拓展注解待实现，元数据处理待实现
