@@ -15,3 +15,4 @@
 
 ### common-api 模块
 - 2019年10月12日
+    ``模块依赖包整理，版本控制迁移至mvn-parent，mvn-min统一管理，展现对象基类，通用展现对象：fdId,fdName，界面展现对象接口，Validation常用校验，constant基础常量``
