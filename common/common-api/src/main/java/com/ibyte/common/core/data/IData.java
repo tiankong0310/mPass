@@ -1,4 +1,4 @@
-package com.ibyte.common.core.dto;
+package com.ibyte.common.core.data;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -8,7 +8,7 @@ import java.util.Map;
  * @Description: <数据对象>
  *
  * @author li.Shangzhi
- * @Date: 2019-10-12
+ * @Date: 2019-10-14
  */
 public interface IData {
 
