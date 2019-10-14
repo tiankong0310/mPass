@@ -19,11 +19,6 @@
 	</a>
 </p>
 
-<form id="_form" method="post" action="https://gitee.com/ibyte/M-Pass/star">
-  <input type="hidden" name="name" value="value" /> 
-  <a onclick="document.getElementById('_form').submit();">点击提交</a>
-</form>
-
 # mPass （Microservice Pass）
 微服务租户级开发平台
 
