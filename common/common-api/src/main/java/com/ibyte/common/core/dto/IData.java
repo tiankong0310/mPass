@@ -1,5 +1,7 @@
 package com.ibyte.common.core.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.Map;
 
 /**
