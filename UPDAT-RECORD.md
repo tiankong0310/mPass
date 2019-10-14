@@ -26,3 +26,8 @@
     - ``展现对象基类，通用展现对象：fdId,fdName，界面展现对象接口，Validation常用校验，constant基础常量``
     - ``mpass开源社区构建`` [mPass开源社区](http://mpass.gitee.io/zh-cn),组件划分,和架构主要在此更新
 - 2019年10月13日
+    - ``React前端环境构建,基础包构建,完善mpass开源社区``
+- 2019年10月14日
+    - ``模块依赖包架构拆分framework-discovery-api,framework-plugin-client依赖更新``
+    - ``采用HibernateValidato对DTO进行校验,基础数据对象完善，基础API字段处理接口完善``
+    - ``添加IField字段接口，计划支持多种注解，字段处理器完善``
