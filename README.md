@@ -51,12 +51,12 @@
     - [x] common-api 
     - [x] common-core
 - [x]framework-discovery
-    - [√] framework-discovery-api
-    - [√] framework-discovery-client
-    - [√] framework-discovery-core
-    - [√] framework-plugin-api
-    - [√] framework-plugin-client
-    - [√] framework-plugin-core
+    - [] framework-discovery-api
+    - [] framework-discovery-client
+    - [] framework-discovery-core
+    - [] framework-plugin-api
+    - [] framework-plugin-client
+    - [] framework-plugin-core
 
 ## 1.1 开发细节
 ### 1.1 SPI拓展
