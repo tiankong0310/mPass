@@ -45,9 +45,18 @@
 - **使用方式灵活**：框架与组件并没有强依赖，可分可合，灵活机动。各组件可以独立的提供强大的功能，也可以互相配合优化使用体验，发挥更大的作用
 
 **查看更新记录请移步**
+[目前进度](https://gitee.com/ibyte/M-Pass/blob/master/UPDAT-RECORD.md)
 - [x] common
     - [x] common-base
-    - [x] common-api [目前进度](https://gitee.com/ibyte/M-Pass/blob/master/UPDAT-RECORD.md)
+    - [x] common-api 
+    - [x] common-core
+- [x]framework-discovery
+    - [√] framework-discovery-api
+    - [√] framework-discovery-client
+    - [√] framework-discovery-core
+    - [√] framework-plugin-api
+    - [√] framework-plugin-client
+    - [√] framework-plugin-core
 
 ## 1.1 开发细节
 ### 1.1 SPI拓展
