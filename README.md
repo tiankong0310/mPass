@@ -50,7 +50,7 @@
     - [x] common-base
     - [x] common-api 
     - [x] common-core
-- [x]framework-discovery
+- [x] framework-discovery
     - [ ] framework-discovery-api
     - [ ] framework-discovery-client
     - [ ] framework-discovery-core
