@@ -8,7 +8,6 @@ import org.springframework.core.env.ConfigurableEnvironment;
 
 /**
  * 监听系统加载事件
- * // TODO
  *
  * @author li.Shangzhi
  * @Date: 2019-10-15 00:51

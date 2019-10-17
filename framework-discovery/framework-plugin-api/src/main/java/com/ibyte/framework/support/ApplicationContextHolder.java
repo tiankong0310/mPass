@@ -2,7 +2,8 @@ package com.ibyte.framework.support;
 
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.ConfigurableApplicationContext;
+import com.ibyte.common.util.thread.KeyLockFactory;
+import com.ibyte.common.util.thread.KeyLockFactory.KeyLock;
 
 import java.lang.reflect.Modifier;
 import java.util.Map;
