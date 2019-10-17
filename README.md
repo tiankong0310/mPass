@@ -122,7 +122,26 @@ public KmssRuntimeException(String messageKey) {
 		this.code = messageKey;
 }
 ```
-### 1.3 系统内置配置
+### 1.4 本地扩展点
+```java
+/**
+ * 本地扩展点的声明采用注解的方式声明，并在注解上使用LocalExtensionPoint的注解<br>
+ *
+ * <li>若定义了manager类，插件工厂在初始化时会自动往manager中注入Provider的信息，configurable强制为false。</li>
+ * <li>若定义了config类，则Plugin.getProvider的class参数为config，返回值为config类的实例。</li>
+ * <li>若未定义了config类，但定义了baseOn，则Plugin.getProvider的class参数为baseOn，返回值为注解所在类的实例（优先Spring的Bean）。</li>
+ * <li>未定义config，未定义baseOn，则扩展点无效</li>
+ *
+ * @author li.Shangzhi
+ * @Date: 2019-10-17
+ */
+@Target({ ElementType.ANNOTATION_TYPE })
+@Retention(RetentionPolicy.RUNTIME)
+public @interface LocalExtensionPoint {
+   //...
+}
+```
+### 1.5 系统内置配置
 **@EnableConfigurationProperties 与 @ConfigurationProperties 处理**
 ```java
 @Configuration
