@@ -1,4 +1,4 @@
-package com.ibyte.support.loader;
+package com.ibyte.framework.support.loader;
 
 /**
  * @Description: <模块信息加载>

@@ -1,6 +1,7 @@
-package com.ibyte.support.loader;
+package com.ibyte.framework.support.loader;
 
 /**
+ * // TODO
  * @Description: <监听ApplicationReadyEvent事件，保存插件和元数据>
  *
  * @author li.Shangzhi
