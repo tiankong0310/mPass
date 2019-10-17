@@ -1,5 +1,7 @@
 package com.ibyte.framework.meta;
 
+import com.ibyte.framework.support.LocalMetaContextHolder;
+
 /**
  * @Description: <模块信息>
  *
