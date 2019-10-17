@@ -182,7 +182,7 @@ public class RedissonAutoConfiguration {
      */
     @Bean(destroyMethod = "shutdown")
     public RedissonClient redissonClient(Config config) {
-        RedissonClient client = Redisson.create(config);
+            RedissonClient client = Redisson.create(config);
         IDGenerator.setJvmId(client.getAtomicLong(IDGenerator.class.getName())
                 .incrementAndGet());
         return client;
