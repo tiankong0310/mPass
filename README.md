@@ -53,10 +53,10 @@
     - [x] common-api 
     - [x] common-core
 - [x] framework-discovery
-    - [ ] framework-discovery-api
+    - [x] framework-discovery-api
     - [ ] framework-discovery-client
     - [ ] framework-discovery-core
-    - [ ] framework-plugin-api
+    - [x] framework-plugin-api
     - [ ] framework-plugin-client
     - [ ] framework-plugin-core
 
