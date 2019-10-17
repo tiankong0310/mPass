@@ -2,6 +2,7 @@ package com.ibyte.common.core.data.handler;
 
 
 import com.ibyte.common.core.data.IData;
+import com.ibyte.framework.support.annotation.ProviderProperty;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +14,7 @@ import java.util.List;
  * @Date: 2019-10-14
  */
 public class FieldHandlerManager {
-	//TODO  @ProviderProperty
+	@ProviderProperty
 	private static List<FieldHandler> handlers = new ArrayList<>();
 
 	/**
