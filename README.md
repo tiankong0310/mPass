@@ -34,6 +34,10 @@
 
 ## 项目总体架构图
 ![项目架构图](https://images.gitee.com/uploads/images/2019/1018/015033_32059ed5_1468963.jpeg "mPass_Springcloud微服务架构-iByte.jpg")
+
+** 核心JAR架构依赖视图 ** 
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1009/000659_b0861629_1468963.png "JAR.png")
+
  :anger:  :facepunch:   _系统处于开发阶段, 预计**两个月**时间完成整体架构体系_
 
 **核心功能**：
@@ -160,9 +164,6 @@ public class SystemConfig {
     //...
 }
 ```
-
-** 核心JAR架构依赖视图 ** 
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1009/000659_b0861629_1468963.png "JAR.png")
 
 **交流群**
 <table border="0">
