@@ -1,5 +1,6 @@
 package com.ibyte.component.redis;
 
+import com.ibyte.common.util.IDGenerator;
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
 import org.redisson.codec.JsonJacksonCodec;
@@ -182,7 +183,8 @@ public class RedissonAutoConfiguration {
     @Bean(destroyMethod = "shutdown")
     public RedissonClient redissonClient(Config config) {
         RedissonClient client = Redisson.create(config);
-        //TODO jvmId 处理
+        IDGenerator.setJvmId(client.getAtomicLong(IDGenerator.class.getName())
+                .incrementAndGet());
         return client;
     }
 }
