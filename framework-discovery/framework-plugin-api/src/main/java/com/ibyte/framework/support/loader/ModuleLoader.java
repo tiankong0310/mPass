@@ -7,4 +7,8 @@ package com.ibyte.framework.support.loader;
  * @Date: 2019-10-15 00:54
  */
 public class ModuleLoader {
+
+    /** 模块标识文件 */
+    private static final String RESOURCE_PATTERN = "ApplicationResources\\.properties";
+
 }
