@@ -33,7 +33,7 @@
 **作者**：iByte (码哥 or 李尚志)
 
 ## 项目总体架构图
-![项目架构图](https://images.gitee.com/uploads/images/2019/1018/015033_32059ed5_1468963.jpeg "mPass_Springcloud微服务架构-iByte.jpg")
+![项目架构图](https://images.gitee.com/uploads/images/2019/1018/020143_0d434b4a_1468963.jpeg "mPass_Springcloud微服务架构.jpg")
 
 ### 核心JAR架构依赖视图
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/1009/000659_b0861629_1468963.png "JAR.png")
