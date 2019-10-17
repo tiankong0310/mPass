@@ -34,6 +34,8 @@
 
 [中文说明](https://gitee.com/ibyte/M-Pass/blob/master/README.md)  |  [English](https://gitee.com/ibyte/M-Pass/blob/master/README.en.md)
 
+## 项目总体架构图
+![项目架构图](https://images.gitee.com/uploads/images/2019/1018/015033_32059ed5_1468963.jpeg "mPass_Springcloud微服务架构-iByte.jpg")
  :anger:  :facepunch:   _系统处于开发阶段, 预计**两个月**时间完成整体架构体系_
 
 **核心功能**：
