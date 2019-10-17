@@ -30,4 +30,10 @@
     - 模块依赖包架构拆分framework-discovery-api,framework-plugin-client依赖更新
     - 采用HibernateValidato对DTO进行校验,基础数据对象完善，基础API字段处理接口完善
     - 添加IField字段接口，计划支持多种注解，字段处理器完善
+- 2019年10月15日
+    - 模块依赖包架构拆分framework-discovery-api,framework-plugin-api依赖更新
+    - common-base # FieldHandlerExtension 处理本地拓展
+    - 本地扩展点的声明采用注解的方式声明，并在注解上使用LocalExtensionPoint的注解
+- 2019年10月16日
+    - 公司加班到凌晨，晚上没办法更新 !!!
 > 本地拓展注解待实现，元数据处理待实现
