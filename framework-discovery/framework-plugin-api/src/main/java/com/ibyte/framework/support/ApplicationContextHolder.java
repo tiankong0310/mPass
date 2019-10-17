@@ -1,5 +1,7 @@
 package com.ibyte.framework.support;
 
+import com.ibyte.common.util.StringHelper;
+import com.ibyte.framework.support.util.PluginReflectUtil;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.ApplicationContext;
 import com.ibyte.common.util.thread.KeyLockFactory;
@@ -83,7 +85,8 @@ public class ApplicationContextHolder {
                     api = findOrCreateInstance(clazz);
                 } else {
                     // 本地没有，使用远程代理
-                    api = RemoteApiProxyFactory.getInstance().create(apiName);
+//                    //TODO  远程代理实现
+//                    api = RemoteApiProxyFactory.getInstance().create(apiName);
                 }
                 if (api == null) {
                     api = NULL;
@@ -115,13 +118,15 @@ public class ApplicationContextHolder {
                 if (clazz != null) {
                     // 代理本地接口
                     if (api != null) {
-                        api = LocalApiProxyFactory.getInstance().create(api,
-                                iface);
+                        // TODO 本地代理接口实现
+//                        api = LocalApiProxyFactory.getInstance().create(api,
+//                                iface);
                     }
                 } else {
                     // 代理远程接口
-                    api = RemoteApiProxyFactory.getInstance().create(apiName,
-                            iface);
+                    // TODO 远程代理接口实现
+//                    api = RemoteApiProxyFactory.getInstance().create(apiName,
+//                            iface);
                 }
                 if (api == null) {
                     api = NULL;
