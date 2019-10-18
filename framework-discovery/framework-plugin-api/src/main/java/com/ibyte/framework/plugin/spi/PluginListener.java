@@ -1,6 +1,7 @@
 package com.ibyte.framework.plugin.spi;
 
 import com.ibyte.framework.support.listener.ClassContext;
+import com.ibyte.framework.support.listener.MemberContext;
 
 /**
  * @Description: <插件扫描监听>
