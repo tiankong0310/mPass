@@ -67,6 +67,13 @@
     - [x] framework-plugin-api
     - [ ] framework-plugin-client
     - [ ] framework-plugin-core
+- [x] framework-gateway
+    - [ ] framework-gateway-api
+    - [ ] framework-gateway-core
+- [x] sys-job
+    - [ ] sys-job-api
+    - [ ] sys-job-client
+    - [ ] sys-job-core
 
 ## 1.1 开发细节
 ### 1.1 SPI拓展
