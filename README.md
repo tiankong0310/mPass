@@ -56,6 +56,7 @@
 
 ### maven 主要核心包版本依赖
 > 目前架构支持 h2database / mysql / oracle  / sqlserver  四种数据库的切换，用户可自由选择安装数据库
+
 |  依赖包   | 说明    |
 | --- | --- |
 |  JDK   | 1.8   |
