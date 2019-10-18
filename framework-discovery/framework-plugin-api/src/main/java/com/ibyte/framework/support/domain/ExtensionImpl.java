@@ -17,6 +17,7 @@ import java.lang.annotation.ElementType;
  * @Date: 2019-10-18
  */
 @Setter
+@Getter
 @ToString
 public class ExtensionImpl implements Extension, Comparable<ExtensionImpl> {
 	/** 模块 */
