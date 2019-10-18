@@ -20,5 +20,7 @@ public class MetaSummary {
 
     private String messageKey;
 
+    private String md5;
 
+    private String module;
 }
