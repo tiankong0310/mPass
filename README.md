@@ -54,6 +54,28 @@
 - **数字化运营闭环**：所有组件都经历了高并发，大流量的检验，对弱网，保活，容器等都有深度的优化，能够兼容复杂的客户端情况
 - **使用方式灵活**：框架与组件并没有强依赖，可分可合，灵活机动。各组件可以独立的提供强大的功能，也可以互相配合优化使用体验，发挥更大的作用
 
+### maven 主要核心包版本依赖
+|  依赖包   | 说明    |
+| --- | --- |
+|  JDK   | 1.8   |
+|  Spring-Cloud   |  Greenwich.SR2   |
+|  Spring-Boot   |   2.1.6.RELEASE  |
+|  Spring-Boot-admmin   |  2.1.6   |
+|  druid   |  1.1.10   |
+|  netty-all   |  RELEASE   |
+|  h2database   |  1.4.197   |
+|  mysql   |  5.1.46   |
+|  oracle   |  12.1.0.1.0   |
+|  sqlserver   |  6.0.8112.200   |
+|  arangodb   |  4.2.2   |
+|  elasticsearch   | 6.1   |
+|  jedis   |  2.9.0   |
+|  logstash   |  6.1   |
+|  guava   |  20.0   |
+|  reflections   |  0.9.11   |
+|  swagger2   | 2.9.2  |
+|  lombok   | 1.18.8  |
+
 **查看更新记录请移步**
 [目前进度](https://gitee.com/ibyte/M-Pass/blob/master/UPDAT-RECORD.md)
 - [x] common
