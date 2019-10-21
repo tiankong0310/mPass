@@ -13,8 +13,6 @@ import com.ibyte.common.util.StringHelper;
 public interface QueryConstant {
 	/**
 	 * 排序方式
-	 * 
-	 * @author 叶中奇
 	 */
 	public enum Direction {
 		/** 升序 */
@@ -25,8 +23,6 @@ public interface QueryConstant {
 
 	/**
 	 * 操作符
-	 * 
-	 * @author 叶中奇
 	 */
 	public enum Operator implements IEnum<String> {
 		/** 等于或IN */
