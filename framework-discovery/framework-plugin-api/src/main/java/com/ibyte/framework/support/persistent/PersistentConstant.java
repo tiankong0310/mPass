@@ -19,8 +19,7 @@ public interface PersistentConstant {
 	 */
 	public enum ElementType {
 		/** 应用 */
-		//TODO 应用配置
-		//MetaApplication(MetaApplicationImpl.class),
+		MetaApplication(MetaApplicationImpl.class),
 		/** 模块 */
 		MetaModule(MetaModuleImpl.class),
 		/** 表 */
