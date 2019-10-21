@@ -86,11 +86,11 @@
     - [x] common-core
 - [x] framework-discovery
     - [x] framework-discovery-api
-    - [ ] framework-discovery-client
-    - [ ] framework-discovery-core
+    - [x] framework-discovery-client
+    - [x] framework-discovery-core
     - [x] framework-plugin-api
-    - [ ] framework-plugin-client
-    - [ ] framework-plugin-core
+    - [x] framework-plugin-client
+    - [x] framework-plugin-core
 - [x] framework-gateway
     - [ ] framework-gateway-api
     - [ ] framework-gateway-core
