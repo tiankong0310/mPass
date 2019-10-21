@@ -68,8 +68,6 @@ public interface IEnum<V> {
 	/**
 	 * 枚举类型转换器
 	 * 
-	 * @author 叶中奇
-	 *
 	 * @param <V>
 	 * @param <E>
 	 */
@@ -98,8 +96,6 @@ public interface IEnum<V> {
 
 	/**
 	 * 枚举类型转JSON
-	 * 
-	 * @author 叶中奇
 	 */
 	public class EnumJsonDeserializer extends JsonDeserializer<IEnum<?>> {
 		private static final Map<Class<?>, Class<?>> TYPE_CACHE = new ConcurrentHashMap<>();
