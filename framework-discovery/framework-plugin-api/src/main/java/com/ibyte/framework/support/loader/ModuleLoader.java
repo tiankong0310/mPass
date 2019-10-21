@@ -2,7 +2,6 @@ package com.ibyte.framework.support.loader;
 
 import com.ibyte.common.constant.NamingConstant;
 import com.ibyte.common.i18n.ResourceUtil;
-import com.ibyte.common.util.ReflectUtil;
 import com.ibyte.common.util.StringHelper;
 import com.ibyte.framework.support.ApplicationContextHolder;
 import com.ibyte.framework.support.LocalMetaContextHolder;
@@ -61,10 +60,21 @@ public class ModuleLoader {
             module.setMessageKey(messageKey);
             module.setAppName(ApplicationContextHolder.getApplicationName());
         }
-
-
-
     }
+
+    /**
+     * 加载完成
+     */
+    public void save() {
+        // 保存本地模块
+        LocalMetaContextHolder context = LocalMetaContextHolder.get();
+        //TODO  调用接口保存模块信息
+        //DesignElementApi.get().saveModules(context.getModules());
+        // 锁定MetaContextHolder
+        LocalMetaContextHolder.get().lock();
+    }
+
+
 
 
 }
