@@ -26,8 +26,6 @@ public interface MetaConstant {
 
 	/**
 	 * 显示类型
-	 * 
-	 * @author 叶中奇
 	 */
 	public enum ShowType {
 		/** 自动选择 */
