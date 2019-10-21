@@ -5,6 +5,7 @@ import com.ibyte.common.dto.Response;
 import com.ibyte.framework.config.dto.PluginConfig;
 import com.ibyte.framework.meta.MetaSummary;
 import com.ibyte.framework.support.domain.ExtensionPointImpl;
+import com.ibyte.framework.support.persistent.DesignElementRemoteApi;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
