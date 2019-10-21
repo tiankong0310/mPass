@@ -99,16 +99,14 @@
     - [ ] sys-job-client
     - [ ] sys-job-core
 ## 项目部分展示图
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1021/215130_f743a30e_1468963.png "权限组织管理.png")
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1021/215139_e575e4dd_1468963.png "日志管理.png")
 <table>
     <tr>
         <td><img src="https://images.gitee.com/uploads/images/2019/1021/181109_d9019f76_1468963.jpeg"/></td>   
         <td><img src="https://images.gitee.com/uploads/images/2019/1021/181005_0efc711e_1468963.jpeg"/></td>
     </tr>
     <tr>
-        <td><img src="https://images.gitee.com/uploads/images/2019/1021/215408_553421a5_1468963.png"/></td>
-        <td><img src="https://images.gitee.com/uploads/images/2019/1021/215505_8f8c9a83_1468963.png"/></td>
+        <td><img src="https://images.cnblogs.com/cnblogs_com/lishangzhi/1573128/o_权限组织管理.png"/></td>
+        <td><img src="https://images.cnblogs.com/cnblogs_com/lishangzhi/1573128/o_日志管理.png"/></td>
     </tr>
 </table>
 ## 1.1 开发细节
