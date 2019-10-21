@@ -20,9 +20,9 @@
 	<a target="_blank" href="https://gitee.com/ibyte/M-Pass" title="API文档">
 		<img src="https://img.shields.io/badge/Api Docs-1.12.0-orange.svg" ></img>
 	</a>
-        <a href='https://gitee.com/ibyte/M-Pass/stargazers'>
-	  <img src='https://gitee.com/ibyte/M-Pass/badge/star.svg?theme=white' alt='star'></img>
-	</a>
+	 <a href='https://gitee.com/ibyte/M-Pass/stargazers'>
+	    <img src='https://gitee.com/ibyte/M-Pass/badge/star.svg?theme=dark' alt='star'></img>
+	 </a>
 </p>
 
 # mPass （Microservice Pass）
