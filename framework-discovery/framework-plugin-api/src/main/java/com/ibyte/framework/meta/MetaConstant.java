@@ -3,7 +3,7 @@ package com.ibyte.framework.meta;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * 元数据常量
+ * 	元数据常量
  *
  * @author li.Shangzhi
  * @Date: 2019-10-17
