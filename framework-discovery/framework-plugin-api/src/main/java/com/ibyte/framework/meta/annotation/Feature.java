@@ -1,7 +1,10 @@
 package com.ibyte.framework.meta.annotation;
 
+import com.ibyte.framework.plugin.annotation.ListenerConfig;
 import com.ibyte.framework.plugin.annotation.LocalExtensionPoint;
+import com.ibyte.framework.support.listener.impl.MetaEntityScanListener;
 
+import javax.persistence.Entity;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -16,10 +19,9 @@ import java.lang.annotation.Target;
 @Target({ ElementType.ANNOTATION_TYPE })
 @Retention(RetentionPolicy.RUNTIME)
 @LocalExtensionPoint(label = "数据字典扩展")
-//TODO 类扫描监听配置 ListenerConfig
-//@ListenerConfig(classAnnotation = Entity.class, memberAnnotation = {
-//        Feature.class,
-//        MetaProperty.class }, listener = MetaEntityScanListener.class)
+@ListenerConfig(classAnnotation = Entity.class, memberAnnotation = {
+        Feature.class,
+        MetaProperty.class }, listener = MetaEntityScanListener.class)
 public @interface Feature {
 
     Class<?> config();
