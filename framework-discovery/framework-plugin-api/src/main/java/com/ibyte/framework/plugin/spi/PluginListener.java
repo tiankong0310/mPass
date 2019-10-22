@@ -7,7 +7,7 @@ import com.ibyte.framework.support.listener.MemberContext;
  * @Description: <插件扫描监听>
  *
  * @author li.Shangzhi
- * @Date: 2019-10-18
+ * @Date: 2019-10-21
  */
 public interface PluginListener {
 

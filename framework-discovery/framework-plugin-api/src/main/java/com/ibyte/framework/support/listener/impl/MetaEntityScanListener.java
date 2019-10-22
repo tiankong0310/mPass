@@ -41,7 +41,7 @@ import java.util.Map;
 public class MetaEntityScanListener implements PluginListener {
     private static final char DOT = '.';
     private static final String[] DISPLAY_PROPERTY = {"fdName", "fdSubject"};
-    private static final String SERVICE_CLASS = "com.landray.common.core.service.IService";
+    private static final String SERVICE_CLASS = "com.ibyte.common.core.service.IService";
 
     @Override
     public void onClassStart(ClassContext clazz) {
