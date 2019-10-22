@@ -1,6 +1,6 @@
 package com.ibyte.common.core.data.handler;
 
-import com.ibyte.framework.support.annotation.LocalExtensionPoint;
+import com.ibyte.framework.plugin.annotation.LocalExtensionPoint;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -2,7 +2,7 @@ package com.ibyte.common.core.data.handler;
 
 
 import com.ibyte.common.core.data.IData;
-import com.ibyte.framework.support.annotation.ProviderProperty;
+import com.ibyte.framework.plugin.annotation.ProviderProperty;
 
 import java.util.ArrayList;
 import java.util.List;
