@@ -1,6 +1,7 @@
 package com.ibyte.framework.support;
 
 import com.ibyte.common.util.StringHelper;
+import com.ibyte.framework.support.proxy.RemoteApiProxyFactory;
 import com.ibyte.framework.support.util.PluginReflectUtil;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.ApplicationContext;
@@ -85,8 +86,7 @@ public class ApplicationContextHolder {
                     api = findOrCreateInstance(clazz);
                 } else {
                     // 本地没有，使用远程代理
-//                    //TODO  远程代理实现
-//                    api = RemoteApiProxyFactory.getInstance().create(apiName);
+                    api = RemoteApiProxyFactory.getInstance().create(apiName);
                 }
                 if (api == null) {
                     api = NULL;
