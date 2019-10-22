@@ -46,7 +46,7 @@ public @interface GlobalExtensionPoint {
 	Class<?> config() default Void.class;
 
 	/**
-	 * 插件更新监听器，基于接口：com.landray.framework.plugin.ExtensionChangedListener
+	 * 插件更新监听器，基于接口：com.ibyte.framework.plugin.ExtensionChangedListener
 	 */
 	String listener() default "";
 
