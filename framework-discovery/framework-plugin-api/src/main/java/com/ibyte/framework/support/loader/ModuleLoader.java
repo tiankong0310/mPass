@@ -6,6 +6,7 @@ import com.ibyte.common.util.StringHelper;
 import com.ibyte.framework.support.ApplicationContextHolder;
 import com.ibyte.framework.support.LocalMetaContextHolder;
 import com.ibyte.framework.support.domain.MetaModuleImpl;
+import com.ibyte.framework.support.persistent.DesignElementApi;
 import org.apache.commons.lang3.StringUtils;
 import org.reflections.Reflections;
 import org.reflections.scanners.ResourcesScanner;
@@ -68,8 +69,7 @@ public class ModuleLoader {
     public void save() {
         // 保存本地模块
         LocalMetaContextHolder context = LocalMetaContextHolder.get();
-        //TODO  调用接口保存模块信息
-        //DesignElementApi.get().saveModules(context.getModules());
+        DesignElementApi.get().saveModules(context.getModules());
         // 锁定MetaContextHolder
         LocalMetaContextHolder.get().lock();
     }
