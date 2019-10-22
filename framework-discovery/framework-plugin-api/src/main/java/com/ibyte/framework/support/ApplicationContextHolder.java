@@ -1,6 +1,7 @@
 package com.ibyte.framework.support;
 
 import com.ibyte.common.util.StringHelper;
+import com.ibyte.framework.support.proxy.LocalApiProxyFactory;
 import com.ibyte.framework.support.proxy.RemoteApiProxyFactory;
 import com.ibyte.framework.support.util.PluginReflectUtil;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
@@ -118,15 +119,14 @@ public class ApplicationContextHolder {
                 if (clazz != null) {
                     // 代理本地接口
                     if (api != null) {
-                        // TODO 本地代理接口实现
-//                        api = LocalApiProxyFactory.getInstance().create(api,
-//                                iface);
+                        // 本地代理接口实现
+                        api = LocalApiProxyFactory.getInstance().create(api,
+                                iface);
                     }
                 } else {
                     // 代理远程接口
-                    // TODO 远程代理接口实现
-//                    api = RemoteApiProxyFactory.getInstance().create(apiName,
-//                            iface);
+                    api = RemoteApiProxyFactory.getInstance().create(apiName,
+                            iface);
                 }
                 if (api == null) {
                     api = NULL;
