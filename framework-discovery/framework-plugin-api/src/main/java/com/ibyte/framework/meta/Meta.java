@@ -2,6 +2,7 @@ package com.ibyte.framework.meta;
 
 import com.ibyte.framework.support.ApplicationContextHolder;
 import com.ibyte.framework.support.LocalMetaContextHolder;
+import com.ibyte.framework.support.persistent.DesignElementApi;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 
 import java.util.ArrayList;
