@@ -68,7 +68,7 @@ public class ResourceUtil {
     }
 
     /**
-     * 获取指定bundle的的资源值 ，bundle为包路径去除com.landray，以-分隔，比如：sys-org
+     * 获取指定bundle的的资源值 ，bundle为包路径去除com.ibyte，以-分隔，比如：sys-org
      */
     public static Map<String, String> getStrings(String prefixKey, String bundle) {
         return getStrings(prefixKey, bundle, null);
