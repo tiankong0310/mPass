@@ -11,7 +11,7 @@ import java.lang.annotation.*;
  * <li>未定义config，未定义baseOn，则扩展点无效</li>
  *
  * @author li.Shangzhi
- * @Date: 2019-10-17
+ * @Date: 2019-10-22
  */
 @Target({ ElementType.ANNOTATION_TYPE })
 @Retention(RetentionPolicy.RUNTIME)
