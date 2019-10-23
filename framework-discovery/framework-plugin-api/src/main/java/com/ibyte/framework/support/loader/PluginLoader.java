@@ -8,6 +8,7 @@ import com.ibyte.framework.plugin.annotation.GlobalExtensionPoint;
 import com.ibyte.framework.plugin.annotation.ListenerConfig;
 import com.ibyte.framework.plugin.annotation.LocalExtensionPoint;
 import com.ibyte.framework.support.PluginContextHolder;
+import com.ibyte.framework.support.builder.ExtensionBuilder;
 import com.ibyte.framework.support.builder.ExtensionPointBuilder;
 import com.ibyte.framework.support.builder.ProviderBuilder;
 import com.ibyte.framework.support.domain.ExtensionImpl;
