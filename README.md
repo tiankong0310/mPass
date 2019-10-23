@@ -99,7 +99,6 @@
     - [ ] sys-job-client
     - [ ] sys-job-core
 ## 项目部分展示图
-![输入图片说明]( "mPass Admin.jpg")
 <table>
     <tr>
         <td><img src="https://images.gitee.com/uploads/images/2019/1023/105813_2678586b_1468963.png"/></td>   
