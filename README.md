@@ -228,7 +228,7 @@ public class SystemConfig {
     <tr>&nbsp;</tr>
     <tr>
         <td><img title="QQ交流群-877056205" src="https://images.gitee.com/uploads/images/2019/1023/154958_d9571f28_111383.png" height="200" width="200"/></td>
-        <td><img title="微信交流群" src="https://images.gitee.com/uploads/images/2019/1024/004701_57d24b15_1468963.png" height="250" width="220"/></td>
+        <td><img title="微信交流群" src="https://images.gitee.com/uploads/images/2019/1024/004701_57d24b15_1468963.png" height="200" width="220"/></td>
         <td><img title="微信公众号-微技术栈" src="https://images.gitee.com/uploads/images/2019/1023/155117_006731a8_111383.jpeg" height="200" width="200"/></td>
     </tr>
 </table>
