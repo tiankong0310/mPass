@@ -27,7 +27,7 @@ import java.util.Map;
 
 /**
  * 插件扫描监听管理器
- * 
+ *
  * @author li.Shangzhi
  */
 @Slf4j
