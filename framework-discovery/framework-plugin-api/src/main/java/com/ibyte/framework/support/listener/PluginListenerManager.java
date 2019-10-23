@@ -6,6 +6,7 @@ import com.ibyte.framework.plugin.annotation.GlobalExtensionPoint;
 import com.ibyte.framework.plugin.annotation.ListenerConfig;
 import com.ibyte.framework.plugin.annotation.LocalExtensionPoint;
 import com.ibyte.framework.plugin.spi.PluginListener;
+import com.ibyte.framework.support.builder.ExtensionBuilder;
 import com.ibyte.framework.support.builder.ExtensionPointBuilder;
 import com.ibyte.framework.support.domain.ExtensionPointImpl;
 import com.ibyte.framework.support.listener.impl.MemberExtensionScanListener;
@@ -26,8 +27,6 @@ import java.util.Map;
 
 /**
  * 插件扫描监听管理器
- *
- * // TODO 插件扫描待完善
  * 
  * @author li.Shangzhi
  */
