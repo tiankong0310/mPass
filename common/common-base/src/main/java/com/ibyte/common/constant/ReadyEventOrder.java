@@ -9,7 +9,7 @@ import org.springframework.core.Ordered;
  * 若需要使用数据字典的功能，则启动顺序必须在FRAMEWORK之后，如：FRAMEWORK + 1
  *
  * @author li.Shangzhi
- * @Date: 2019-10-09 22:16
+ * @Date: 2019-10-23 22:16
  */
 public interface ReadyEventOrder {
 
