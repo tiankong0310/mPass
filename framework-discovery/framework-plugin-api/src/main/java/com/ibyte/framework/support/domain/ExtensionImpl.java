@@ -3,6 +3,7 @@ package com.ibyte.framework.support.domain;
 import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.ibyte.framework.plugin.Extension;
+import com.ibyte.framework.support.builder.ProviderBuilder;
 import com.ibyte.framework.support.util.PluginReflectUtil;
 import lombok.Getter;
 import lombok.Setter;
@@ -127,6 +128,7 @@ public class ExtensionImpl implements Extension, Comparable<ExtensionImpl> {
 	@Override
 	public <T> T getProvider() {
 		if (provider == null) {
+			// 构造Provider
 			provider = ProviderBuilder.buildProvider(this);
 		}
 		return (T) provider;
