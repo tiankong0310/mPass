@@ -14,8 +14,6 @@ import lombok.Getter;
 public interface PersistentConstant {
 	/**
 	 * 设计元素类型
-	 * 
-	 * @author 叶中奇
 	 */
 	public enum ElementType {
 		/** 应用 */
