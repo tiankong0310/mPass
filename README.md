@@ -98,6 +98,10 @@
     - [ ] sys-job-api
     - [ ] sys-job-client
     - [ ] sys-job-core
+## 运维架构图
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1025/005728_9d45ec29_1468963.png "5cc70cac4b7a4.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1025/005737_ba969737_1468963.png "5cc87695f109d.png")
+
 ## 项目部分展示图
 
 <table>
