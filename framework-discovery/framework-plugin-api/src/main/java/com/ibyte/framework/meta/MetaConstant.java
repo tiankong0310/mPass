@@ -13,6 +13,7 @@ public interface MetaConstant {
 	String TYPE_RTF = "RTF";
 	String TYPE_BLOB = "BLOB";
 	String TYPE_BOOLEAN = "Boolean";
+	String TYPE_SHORT = "Short";
 	String TYPE_INTEGER = "Integer";
 	String TYPE_LONG = "Long";
 	String TYPE_FLOAT = "Float";
