@@ -110,7 +110,6 @@ public class RemoteApiScanListener implements PluginListener {
     /**
      * 扫描信息注册
      *
-     * @author 叶中奇
      */
     @ListenerConfig(classAnnotation = RequestMapping.class, listener = RemoteApiScanListener.class)
     public @interface RemoteApiConfig {
