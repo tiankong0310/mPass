@@ -1,6 +1,6 @@
-package com.ibyte.core.repository;
+package com.ibyte.common.core.repository;
 
-import com.ibyte.core.entity.IEntity;
+import com.ibyte.common.core.entity.IEntity;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.NoRepositoryBean;
