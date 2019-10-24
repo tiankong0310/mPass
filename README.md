@@ -77,6 +77,8 @@
 |  reflections   |  0.9.11   |
 |  swagger2   | 2.9.2  |
 |  lombok   | 1.18.8  |
+## 运维架构图
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1025/005728_9d45ec29_1468963.png "ops.png")
 
 **查看更新记录请移步**
 [目前进度](https://gitee.com/ibyte/M-Pass/blob/master/UPDAT-RECORD.md)
@@ -98,7 +100,12 @@
     - [ ] sys-job-api
     - [ ] sys-job-client
     - [ ] sys-job-core
+
+## 项目详细部署图
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1025/005737_ba969737_1468963.png "deploy.png")
+
 ## 项目部分展示图
+
 <table>
     <tr>
         <td><img src="https://images.gitee.com/uploads/images/2019/1023/105813_2678586b_1468963.png"/></td>   
@@ -109,114 +116,11 @@
         <td><img src="https://images.gitee.com/uploads/images/2019/1023/105813_12560953_1468963.jpeg"/></td>
     </tr>
     <tr>
-        <td><img src="https://images.cnblogs.com/cnblogs_com/lishangzhi/1573128/o_权限组织管理.png"/></td>
-        <td><img src="https://images.cnblogs.com/cnblogs_com/lishangzhi/1573128/o_日志管理.png"/></td>
+        <td><img src="https://images.gitee.com/uploads/images/2019/1025/005302_0b973162_1468963.png"/></td>
+        <td><img src="https://images.gitee.com/uploads/images/2019/1025/005311_e968ed2c_1468963.png "日志管理.png"/></td>
     </tr>
 </table>
-## 1.1 开发细节
-### 1.1 SPI拓展
-**SpringBoot SPI拓展**
-- 支持自定义Banner拓展
-- 支持设置默认config配置文件加载
-- 支持实现logback拓展
-- 支持实现redis拓展
-- 支持实现spring基础拓展
 
-```java
-org.springframework.boot.SpringApplicationRunListener=\
-  com.ibyte.component.config.DefaultConfigListener,com.ibyte.component.logback.LogbackListener,com.ibyte.component.banner.BannerListener
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.ibyte.component.spring.PackageScanAutoConfig,com.ibyte.component.redis.RedissonAutoConfiguration
-com.ibyte.component.config.DefaultConfigFactory=\
-  com.ibyte.component.config.InitPropConfigFactory
-```
-## 1.2 IDGenerator
-**ID生成器**
-```java
-/**
- * 生成主键，36位，[0-9a-w]：时间+w+jvmId+w+流水号+w+随机数填充+w+tenantId
- */
-public static String generateID() {
-    return generateID(System.currentTimeMillis(), TenantUtil.getTenantId());
-}
-/**
- * 根据指定时间生成主键
- */
-public static String generateID(long time) {
-    return generateID(time, TenantUtil.getTenantId());
-}
-
-/**
- * 根据指定时间，租户生成主键
- */
-public static String generateID(long time, int tenant) {
-    StringBuilder id = new StringBuilder(LEN);
-    id.append(Long.toUnsignedString(time, 32)).append(SPLIT)
-            .append(Long.toUnsignedString(jvmId, 32)).append(SPLIT);
-    String tenantId = Integer.toUnsignedString(tenant, 32);
-    // 除去租户ID长度
-    int length = LEN - tenantId.length() - 1;
-    // 序列号填充，若填充完超过指定长度，则取后半部分
-    String seqNum = Long.toUnsignedString(SEQ.incrementAndGet(), 32);
-    if (id.length() + seqNum.length() > length) {
-        seqNum = seqNum.substring(id.length() + seqNum.length() - length,
-                seqNum.length());
-    }
-    id.append(seqNum).append(SPLIT);
-    // 随机数填充，不超过leng长度
-    while (id.length() < length) {
-        id.append(Integer.toUnsignedString(RANDOM.nextInt(), 32));
-    }
-    id.delete(length, id.length());
-    return id.append(SPLIT).append(tenantId).toString();
-}
-```
-### 1.3 异常国际化处理
-**RuntimeException 拓展类处理**
-```java
-public KmssRuntimeException(String messageKey) {
-		super(ResourceUtil.getString(messageKey));
-		this.code = messageKey;
-}
-```
-### 1.4 本地扩展点
-```java
-/**
- * 本地扩展点的声明采用注解的方式声明，并在注解上使用LocalExtensionPoint的注解<br>
- *
- * <li>若定义了manager类，插件工厂在初始化时会自动往manager中注入Provider的信息，configurable强制为false。</li>
- * <li>若定义了config类，则Plugin.getProvider的class参数为config，返回值为config类的实例。</li>
- * <li>若未定义了config类，但定义了baseOn，则Plugin.getProvider的class参数为baseOn，返回值为注解所在类的实例（优先Spring的Bean）。</li>
- * <li>未定义config，未定义baseOn，则扩展点无效</li>
- *
- * @author li.Shangzhi
- * @Date: 2019-10-17
- */
-@Target({ ElementType.ANNOTATION_TYPE })
-@Retention(RetentionPolicy.RUNTIME)
-public @interface LocalExtensionPoint {
-   //...
-}
-```
-### 1.5 系统内置配置
-**@EnableConfigurationProperties 与 @ConfigurationProperties 处理**
-```java
-@Configuration
-@EnableConfigurationProperties({SystemConfig.class, TenantConfig.class, LicenseConfig.class, LanguageConfig.class, CorsConfig.class})
-```
-```java
-// 多语言配置信息
-@ConfigurationProperties("kmss.lang")
-public class LanguageConfig {
-    //...
-}
-
-// 系统配置
-@ConfigurationProperties("kmss.system")
-public class SystemConfig {
-    //...
-}
-```
 ## 如果您觉得有帮助，请点右上角 "Star" 支持一下~谢谢
 **交流群**
 <table border="0">
