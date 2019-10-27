@@ -16,6 +16,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import static com.ibyte.common.util.ReflectUtil.accessable;
 
 /**
  * Entity与VO的转换工具默认实现
