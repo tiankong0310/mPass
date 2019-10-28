@@ -8,8 +8,8 @@ import java.util.Optional;
 
 /**
  * 服务接口
- * 
- * @author 李尚志
+ *
+ * @author ibyte
  *
  * @param <E>
  *            Entity实现类
