@@ -2,6 +2,8 @@ package com.ibyte.framework.meta;
 
 import com.ibyte.framework.meta.MetaConstant.ShowType;
 
+import java.util.List;
+
 /**
  * 元数据字段
  *
@@ -52,6 +54,13 @@ public interface MetaProperty {
 	boolean isLazy();
 
 	/**
+	 *  读-创建人
+	 *
+	 * @return
+	 */
+	String getMappedBy();
+
+	/**
 	 * 读-是否数组
 	 * 
 	 * @return
@@ -73,7 +82,7 @@ public interface MetaProperty {
 	boolean isReadOnly();
 
 	/**
-	 * 是否支持多语言
+	 * 读-是否支持多语言
 	 *
 	 * @return
 	 */
@@ -106,6 +115,20 @@ public interface MetaProperty {
 	 * @return
 	 */
 	String getEnumClass();
+
+    /**
+     * 读-EnumList
+     *
+     * @return
+     */
+    List<EnumItem> getEnumList();
+
+    /**
+     * 读-VoProperties
+     *
+     * @return
+     */
+    List<String> getVoProperties();
 
 	/**
 	 * 读-显示类型

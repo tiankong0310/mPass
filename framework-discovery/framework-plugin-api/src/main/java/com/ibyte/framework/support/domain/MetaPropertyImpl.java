@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.ibyte.common.util.JsonUtil;
+import com.ibyte.framework.meta.EnumItem;
 import com.ibyte.framework.meta.MetaConstant;
 import com.ibyte.framework.meta.MetaConstant.ShowType;
 import com.ibyte.framework.meta.MetaProperty;
@@ -12,6 +13,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -41,6 +43,9 @@ public class MetaPropertyImpl implements MetaProperty {
     /** 延迟加载 */
     private boolean lazy;
 
+    /** 创建人 */
+    private String mappedBy;
+
     /** 是否数组 */
     private boolean collection;
 
@@ -49,6 +54,9 @@ public class MetaPropertyImpl implements MetaProperty {
 
     /** 只读 */
     private boolean readOnly;
+
+    /**支持多语言*/
+    private boolean langSupport;
 
     /** 长度 */
     private int length;
@@ -59,6 +67,9 @@ public class MetaPropertyImpl implements MetaProperty {
 
     /** 枚举 */
     private String enumClass;
+
+    /** 属性 */
+    private List<String> voProperties;
 
     /** 显示类型 */
     private MetaConstant.ShowType showType;
@@ -102,6 +113,11 @@ public class MetaPropertyImpl implements MetaProperty {
     }
 
     @Override
+    public String getMappedBy() {
+        return mappedBy;
+    }
+
+    @Override
     public boolean isCollection() {
         return collection;
     }
@@ -114,6 +130,11 @@ public class MetaPropertyImpl implements MetaProperty {
     @Override
     public boolean isReadOnly() {
         return readOnly;
+    }
+
+    @Override
+    public boolean isLangSupport() {
+        return langSupport;
     }
 
     @Override
@@ -134,6 +155,16 @@ public class MetaPropertyImpl implements MetaProperty {
     @Override
     public String getEnumClass() {
         return enumClass;
+    }
+
+    @Override
+    public List<EnumItem> getEnumList() {
+        return null;
+    }
+
+    @Override
+    public List<String> getVoProperties() {
+        return voProperties;
     }
 
     @Override
