@@ -38,4 +38,17 @@ public class RedissonCacheRegionFactory extends RedissonRegionFactory {
         this.defaultConfig = context.getBean(Config.class);
         super.prepareForUse(settings, properties);
     }
+
+    /**
+     * 创建redission客户端
+     *
+     * @param properties
+     * @return
+     */
+    @Override
+    protected RedissonClient createRedissonClient(Map properties) {
+        Config customConfig = new Config(defaultConfig);
+        customConfig.setCodec(new SnappyCodec());
+        return Redisson.create(customConfig);
+    }
 }
