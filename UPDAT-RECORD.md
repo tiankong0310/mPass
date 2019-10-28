@@ -68,4 +68,20 @@
     - 插件工厂加载器完善、ExtensionPoint实例构造
     - 监听ApplicationReadyEvent事件，保存插件和元数据
     - 配置服务持久化处理
+-  2019年10月24日 
+    - 设计元素类型
+    - 扫描信息注册
+    - common-core / common-test 基础架构包设计拆分
+## common-core 模块
+-  2019年10月25日
+    - 签名工具类、数据库实体对象接口、树模型
+    - 事件管理、仓库层接口
+    - Entity与VO的转换工具默认实现
+    - 基础基类，实现基类、业务基类实现
+-  2019年10月26日
+    - 公司加班,周六晚上休息~
+-  2019年10月27日
+    - controller基类实现、增删查改的Controller实现、批量删除Controller、元数据读取Controller、查询Controller、所有常用的Controller组合
+    - 签名工具类完善、数据库操作小工具、数据格式转换、手工事务处理、所有常用的Controller组合
+    
 > 本地拓展注解待实现，元数据处理待实现
