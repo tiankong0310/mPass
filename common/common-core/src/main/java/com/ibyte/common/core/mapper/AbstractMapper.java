@@ -55,7 +55,7 @@ public abstract class AbstractMapper {
     /**
      * 转换上下文
      *
-     * @author 叶中奇
+     * @author Li.Shangzhi
      */
     static class MapperContext {
         // 环境参数
