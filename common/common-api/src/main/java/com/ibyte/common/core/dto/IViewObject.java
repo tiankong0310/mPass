@@ -1,5 +1,7 @@
 package com.ibyte.common.core.dto;
 
+import com.ibyte.common.core.data.IData;
+
 import java.util.List;
 
 /**
