@@ -73,6 +73,13 @@ public interface MetaProperty {
 	boolean isReadOnly();
 
 	/**
+	 * 是否支持多语言
+	 *
+	 * @return
+	 */
+	boolean isLangSupport();
+
+	/**
 	 * 读-字符串长度
 	 * 
 	 * @return
