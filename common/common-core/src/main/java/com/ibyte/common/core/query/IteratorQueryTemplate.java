@@ -179,7 +179,7 @@ public class IteratorQueryTemplate<E extends IEntity> {
 	/**
 	 * 查询迭代器
 	 * 
-	 * @author 叶中奇
+	 * @author Li.Shangzhi
 	 */
 	public class QueryIterator implements Iterator<E> {
 		@Getter
