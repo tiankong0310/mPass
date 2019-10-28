@@ -8,6 +8,8 @@ import com.ibyte.common.core.mapper.EntityToVoMapper;
 import com.ibyte.common.core.mapper.VoToEntityMapper;
 import com.ibyte.common.core.query.PageQueryTemplate;
 import com.ibyte.common.core.repository.IRepository;
+import com.ibyte.common.core.validation.AddGroup;
+import com.ibyte.common.core.validation.UpdateGroup;
 import com.ibyte.common.core.validation.ValidationUtil;
 import com.ibyte.common.exception.NoRecordException;
 import com.ibyte.common.exception.RecordExistException;
