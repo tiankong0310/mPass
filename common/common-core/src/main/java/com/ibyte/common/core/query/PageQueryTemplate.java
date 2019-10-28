@@ -588,7 +588,7 @@ public class PageQueryTemplate<E extends IEntity, V> {
 	/**
 	 * VO对象信息
 	 *
-	 * @author 叶中奇
+	 * @author Li.Shangzhi
 	 */
 	static class ViewInfo {
 		/** 在select语句的第几个返回值 */
