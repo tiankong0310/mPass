@@ -6,6 +6,7 @@ import com.ibyte.common.core.entity.IEntity;
 import com.ibyte.common.core.event.*;
 import com.ibyte.common.core.mapper.EntityToVoMapper;
 import com.ibyte.common.core.mapper.VoToEntityMapper;
+import com.ibyte.common.core.query.PageQueryTemplate;
 import com.ibyte.common.core.repository.IRepository;
 import com.ibyte.common.core.validation.ValidationUtil;
 import com.ibyte.common.exception.NoRecordException;
