@@ -140,7 +140,7 @@ public class TransactionUtil {
 	/**
 	 * 事务提交触发器
 	 * 
-	 * @author 叶中奇
+	 * @author Li.Shangzhi
 	 */
 	private static class OnCommitSynchronization
 			extends TransactionSynchronizationAdapter {
