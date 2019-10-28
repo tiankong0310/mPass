@@ -2,13 +2,15 @@ package com.ibyte.common.core.query;
 
 import com.ibyte.common.core.dto.IViewObject;
 import com.ibyte.common.core.entity.IEntity;
+import com.ibyte.common.core.query.support.QueryFilterChain.FilterInfo;
 import com.ibyte.common.util.LangUtil;
-import sun.misc.ObjectInputFilter;
 
 import javax.persistence.EntityManager;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * @Description: <通用查下模块>
+ * @Description: <通用查询模块>
  *
  * @param <E>
  * @param <V>
@@ -22,6 +24,7 @@ public class PageQueryTemplate<E extends IEntity, V> {
     private Class<E> entityClass;
     private Class<V> viewClass;
     private boolean isViewObject;
+    private List<FilterInfo> filters = new ArrayList<>();
     private boolean cacheable;
     private boolean filterTenant = true;
     private boolean langSupport = LangUtil.isSuportEnabled();
