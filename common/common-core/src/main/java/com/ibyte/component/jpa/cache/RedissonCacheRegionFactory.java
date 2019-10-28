@@ -1,4 +1,4 @@
-package com.ibyte.component.jpa;
+package com.ibyte.component.jpa.cache;
 
 import com.ibyte.framework.support.ApplicationContextHolder;
 import org.hibernate.boot.spi.SessionFactoryOptions;
